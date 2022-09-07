@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <!--fonte-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Righteous&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header id="title">
+        <h1>Bora Começa!</h1>
+    </header>
+    <hr>
+    <br>
+
+    <form method="GET">
+        <div class="birth-info">
+            <h3>Birth Information</h3>
+            <p>
+                <label for="nome">First Name:</label>
+                <input type="text" id="First-name" placeholder="Your First name" required="required" name="first-name">
+                
+                <label for="last-nome">Last Name:</label>
+                <input type="text" id="last-name" placeholder="Your Last name" required="required" name="last-name">
+            </p>
+
+            <br>
+
+            <p>
+                <label for="date">Birth Date:</label>
+                <input type="date" name="birth-date" id="birth-date" name="date">
+                
+
+                <label for="state-birth">State of Birth:</label>
+                <input type="text" name="state-birth" id="state-birth" placeholder="State Birth" required="required" name="state-birth">
+                
+            </p>
+        </div>
+        <br>
+        <hr>
+        <!--hr faz a divisão do form-->
+
+        <!-- informação de contato-->
+        <br>
+        <div class="contact-infor">
+            <h3>Contact Information</h3>
+            <p>
+                <label for="fone">Phone Number:</label>
+                <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone">
+            </p>
+
+            <br>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="emailid" placeholder="your-email@mail.com" name="email">
+            </p>
+        </div>
+
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
